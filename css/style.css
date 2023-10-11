@@ -1,0 +1,105 @@
+.image-container{
+    background: url('img/estetica.jpg') center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.form-container{
+    background-color: #4c4b4d;
+    display: flex;
+    justify-content: center;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/*cabeçalho*/
+.form-box h4{
+    font-weight: bold;
+    color: #fff;
+}
+
+/*posição de icones de senha e email*/
+.form-box .form-input {
+    position: relative;
+}
+
+/*caixa de texto*/
+.form-box .form-input input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: white;
+    padding-left: 45px;
+}
+
+/* icones de senha e amail */
+.form-box .form-input span{
+    position: absolute;
+    top: 8px;
+    padding-left: 20px;
+    color: #777777;
+}
+
+/*espaço no texto de dentro da caixa de texto*/
+.form-box .form-input input::placeholder{
+    padding-left: 0px;
+}
+
+/* cor da borda de caixa de texto*/
+.form-box .form-input input:focus,
+.form-box .form-input input:valid{
+    border-bottom: 2px solid rgb(241, 16, 166);
+}
+
+/* borda de botao lembrar me*/
+.form-box input[type="checkbox"]:not(:checked) + label:before{
+    background: transparent;
+    border: 2px solid #ffffff;
+    width: 15px;
+    height: 15px;
+}
+
+/* cor no botal de seleçao lemra me*/
+.form-box .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{
+    background-color: rgb(241, 16, 166);
+    border: 0px;
+}
+
+/* botao submeter*/
+.form-box button[type="submit"]{
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background-color:rgb(241, 16, 166);
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+/* efeito no botao de submeter*/
+.form-box button[type="submit"]:hover{
+    -webkit-box-shadow: 0px 9px 10px -2px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 9px 10px -2px rgba(0,0,0,0.55);
+    box-shadow: 0px 9px 10px -2px rgba(0,0,0,0.55);
+}
+
+/* botao delink de login, registrar, redefinir senha*/
+.redefinir-link, .registro-link, .login-link{
+    color: #fff;
+    font-weight: bold;
+}
+
+.redefinir-link:hover, .registro-link:hover, .login-link:hover{
+    color: rgb(241, 16, 166);
+}
+
